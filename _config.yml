@@ -375,7 +375,7 @@ han: false
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: 41fc030db57d5570dd22f78997dc4a7e
 
 # Duoshuo ShortName
 #duoshuo_shortname:
@@ -747,3 +747,9 @@ since: 2019
 
 # Theme version
 version: 5.1.1
+
+# 统计访问数量
+leancloud_visitors:
+ enable: true
+ app_id: 0TCaQDr3J60wzsKkpuMI6RkG-gzGzoHsz
+ app_key: qGkvwq26cdmVTxEuDTEgMkEU
