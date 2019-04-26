@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[tp分页日期参数后面有+]]></title>
+    <url>%2F2019%2F04%2F26%2Ftp%E5%88%86%E9%A1%B5%E6%97%A5%E6%9C%9F%E5%8F%82%E6%95%B0%E5%90%8E%E9%9D%A2%E6%9C%89%2B%2F</url>
+    <content type="text"><![CDATA[thinkphp分页中参数如果带有空格，空格会被编码成“+”，那么有些分页数据就没法正常读取。处理方法：找到分页文件类:123private function url($page)&#123; return str_replace(&apos;[PAGE]&apos;, $page, urldecode($this-&gt;url));&#125; think PHP5分页类文件路径：/thinkphp/library/think/Page.php]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>thinkphp</tag>
+        <tag>php</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[MYSQL报错1292]]></title>
     <url>%2F2019%2F04%2F25%2FMYSQL%E6%8A%A5%E9%94%991292%2F</url>
-    <content type="text"><![CDATA[##错误原因在MySQL导入数据或者数据传输时报错： 1292 - Incorrect date value: ‘0000-00-00’ for column ‘wedding_day’ at row 99 上面的错误信息原因是wedding_day这个字段的数据类型是date,但是导入的数据值为空、null或者0000-00-00，这样在MySQL后面的比较高的版本里就会报错， ##解决方案 ###临时解决执行sql：1set global sql_mode=&quot;NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION&quot;; 上面的sql仅作临时处理，当MySQL重启后就会失效]]></content>
+    <content type="text"><![CDATA[错误原因在MySQL导入数据或者数据传输时报错： 1292 - Incorrect date value: ‘0000-00-00’ for column ‘wedding_day’ at row 99 上面的错误信息原因是wedding_day这个字段的数据类型是date,但是导入的数据值为空、null或者0000-00-00，这样在MySQL后面的比较高的版本里就会报错， 解决方案临时解决执行sql：1set global sql_mode=&quot;NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION&quot;; 上面的sql仅作临时处理，当MySQL重启后就会失效]]></content>
       <categories>
         <category>MySQL</category>
       </categories>
@@ -17,7 +29,7 @@
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
   <entry>
-    <title><![CDATA[~~test 测试文章]]></title>
+    <title><![CDATA[test 测试文章]]></title>
     <url>%2F2013%2F12%2F02%2Ftest%2F</url>
     <content type="text"><![CDATA[这是一篇测试文章，为的是可以帮助我编写我的文章，让我熟悉编写博客的方式方法这里的内容是不能够全部显示的]]></content>
       <categories>

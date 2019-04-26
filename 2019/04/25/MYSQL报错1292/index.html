@@ -94,18 +94,18 @@
 
 
 
-  <meta name="description" content="##错误原因在MySQL导入数据或者数据传输时报错： 1292 - Incorrect date value: ‘0000-00-00’ for column ‘wedding_day’ at row 99">
+  <meta name="description" content="错误原因在MySQL导入数据或者数据传输时报错： 1292 - Incorrect date value: ‘0000-00-00’ for column ‘wedding_day’ at row 99">
 <meta name="keywords" content="MySQL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MYSQL报错1292">
 <meta property="og:url" content="https://gaopeihua.github.io/2019/04/25/MYSQL报错1292/index.html">
 <meta property="og:site_name" content="培华の博客">
-<meta property="og:description" content="##错误原因在MySQL导入数据或者数据传输时报错： 1292 - Incorrect date value: ‘0000-00-00’ for column ‘wedding_day’ at row 99">
+<meta property="og:description" content="错误原因在MySQL导入数据或者数据传输时报错： 1292 - Incorrect date value: ‘0000-00-00’ for column ‘wedding_day’ at row 99">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-25T03:13:39.311Z">
+<meta property="og:updated_time" content="2019-04-25T03:15:39.190Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MYSQL报错1292">
-<meta name="twitter:description" content="##错误原因在MySQL导入数据或者数据传输时报错： 1292 - Incorrect date value: ‘0000-00-00’ for column ‘wedding_day’ at row 99">
+<meta name="twitter:description" content="错误原因在MySQL导入数据或者数据传输时报错： 1292 - Incorrect date value: ‘0000-00-00’ for column ‘wedding_day’ at row 99">
 
 
 
@@ -394,7 +394,7 @@
                 
               
 
-              <time title="创建时间：2019-04-25 00:00:00 / 修改时间：11:13:39" itemprop="dateCreated datePublished" datetime="2019-04-25T00:00:00+08:00">2019-04-25</time>
+              <time title="创建时间：2019-04-25 00:00:00 / 修改时间：11:15:39" itemprop="dateCreated datePublished" datetime="2019-04-25T00:00:00+08:00">2019-04-25</time>
             
 
             
@@ -462,12 +462,11 @@
       
 
       
-        <p>##错误原因<br>在MySQL导入数据或者数据传输时报错：</p>
+        <h1 id="错误原因"><a href="#错误原因" class="headerlink" title="错误原因"></a>错误原因</h1><p>在MySQL导入数据或者数据传输时报错：</p>
 <p>1292 - Incorrect date value: ‘0000-00-00’ for column ‘wedding_day’ at row 99</p>
 <a id="more"></a>
 <p>上面的错误信息原因是wedding_day这个字段的数据类型是date,但是导入的数据值为空、null或者0000-00-00，这样在MySQL后面的比较高的版本里就会报错，</p>
-<p>##解决方案</p>
-<p>###临时解决<br>执行sql：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set global sql_mode=&quot;NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION&quot;;</span><br></pre></td></tr></table></figure></p>
+<h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><h2 id="临时解决"><a href="#临时解决" class="headerlink" title="临时解决"></a>临时解决</h2><p>执行sql：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set global sql_mode=&quot;NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION&quot;;</span><br></pre></td></tr></table></figure></p>
 <p>上面的sql仅作临时处理，当MySQL重启后就会失效</p>
 
       
@@ -515,6 +514,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2019/04/26/tp分页日期参数后面有+/" rel="prev" title="tp分页日期参数后面有+">
+                tp分页日期参数后面有+ <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -557,8 +560,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -575,7 +587,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -596,7 +608,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -619,7 +633,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -646,6 +664,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#错误原因"><span class="nav-number">1.</span> <span class="nav-text">错误原因</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解决方案"><span class="nav-number">2.</span> <span class="nav-text">解决方案</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#临时解决"><span class="nav-number">2.1.</span> <span class="nav-text">临时解决</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
