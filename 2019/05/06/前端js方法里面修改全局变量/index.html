@@ -94,18 +94,18 @@
 
 
 
-  <meta name="description" content="一般在方法里对全局变量的修改仅限于方法体内，方法结束之后，全局变量就会恢复之前的值，在前端的js代码里，可以通过使用ajax来修改全局变量的值： 1234567891011&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;    var n = 1;    function changen() &amp;#123;        $.ajax(&amp;#123;">
+  <meta name="description" content="一般在方法里对全局变量的修改仅限于方法体内，方法结束之后，全局变量就会恢复之前的值，在前端的js代码里，可以通过使用ajax来修改全局变量的值：">
 <meta name="keywords" content="js,jq">
 <meta property="og:type" content="article">
 <meta property="og:title" content="前端js方法里面修改全局变量">
 <meta property="og:url" content="https://gaopeihua.github.io/2019/05/06/前端js方法里面修改全局变量/index.html">
 <meta property="og:site_name" content="培华の博客">
-<meta property="og:description" content="一般在方法里对全局变量的修改仅限于方法体内，方法结束之后，全局变量就会恢复之前的值，在前端的js代码里，可以通过使用ajax来修改全局变量的值： 1234567891011&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;    var n = 1;    function changen() &amp;#123;        $.ajax(&amp;#123;">
+<meta property="og:description" content="一般在方法里对全局变量的修改仅限于方法体内，方法结束之后，全局变量就会恢复之前的值，在前端的js代码里，可以通过使用ajax来修改全局变量的值：">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-06T07:55:01.793Z">
+<meta property="og:updated_time" content="2019-05-06T10:06:42.730Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端js方法里面修改全局变量">
-<meta name="twitter:description" content="一般在方法里对全局变量的修改仅限于方法体内，方法结束之后，全局变量就会恢复之前的值，在前端的js代码里，可以通过使用ajax来修改全局变量的值： 1234567891011&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;    var n = 1;    function changen() &amp;#123;        $.ajax(&amp;#123;">
+<meta name="twitter:description" content="一般在方法里对全局变量的修改仅限于方法体内，方法结束之后，全局变量就会恢复之前的值，在前端的js代码里，可以通过使用ajax来修改全局变量的值：">
 
 
 
@@ -394,7 +394,7 @@
                 
               
 
-              <time title="创建时间：2019-05-06 15:51:41 / 修改时间：15:55:01" itemprop="dateCreated datePublished" datetime="2019-05-06T15:51:41+08:00">2019-05-06</time>
+              <time title="创建时间：2019-05-06 15:51:41 / 修改时间：18:06:42" itemprop="dateCreated datePublished" datetime="2019-05-06T15:51:41+08:00">2019-05-06</time>
             
 
             
@@ -462,8 +462,7 @@
       
 
       
-        <p>一般在方法里对全局变量的修改仅限于方法体内，方法结束之后，全局变量就会恢复之前的值，在前端的js代码里，可以通过使用ajax来修改全局变量的值：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    var n = 1;</span><br><span class="line">    function changen() &#123;</span><br><span class="line">        $.ajax(&#123;</span><br><span class="line">            async: false,</span><br><span class="line">            success: function() &#123;</span><br><span class="line">                n = 0;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+        <p>一般在方法里对全局变量的修改仅限于方法体内，方法结束之后，全局变量就会恢复之前的值，在前端的js代码里，可以通过使用ajax来修改全局变量的值：<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    var n = 1;</span><br><span class="line">    function changen() &#123;</span><br><span class="line">        $.ajax(&#123;</span><br><span class="line">            async: false,</span><br><span class="line">            success: function() &#123;</span><br><span class="line">                n = 0;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
 <p>其中async: false是把ajax从异步改为同步，这样就可以实现在方法里实现对全局变量的修改。</p>
 
       
@@ -512,6 +511,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/06/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -573,7 +576,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>

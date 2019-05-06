@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[MySQL报错1271]]></title>
+    <url>%2F2019%2F05%2F06%2FMySQL%E6%8A%A5%E9%94%991271%2F</url>
+    <content type="text"><![CDATA[###MySQL 报错：1271 - Illegal mix of collations for operation ‘like’在 MySQL 5.5 以上, 若字段类型 Type 是 time,date,datetime 在 select时如果使用 like ‘%中文%’ 会出现 Illegal mix of collations for operation ‘like’ 在编程时要对每个字段进行查找， 在执行时可能就会出现时间字段 like ‘%中文%’ 这种语法, 在旧版的 MySQL 是不会出现错误的. ###解决方案 MySQL 5.5 以上, 必需改成 like binary ‘%中文%’ 即可避免出现错误.]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F05%2F06%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[前端js方法里面修改全局变量]]></title>
     <url>%2F2019%2F05%2F06%2F%E5%89%8D%E7%AB%AFjs%E6%96%B9%E6%B3%95%E9%87%8C%E9%9D%A2%E4%BF%AE%E6%94%B9%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F%2F</url>
-    <content type="text"><![CDATA[一般在方法里对全局变量的修改仅限于方法体内，方法结束之后，全局变量就会恢复之前的值，在前端的js代码里，可以通过使用ajax来修改全局变量的值： 1234567891011&lt;script type=&quot;text/javascript&quot;&gt; var n = 1; function changen() &#123; $.ajax(&#123; async: false, success: function() &#123; n = 0; &#125; &#125;) &#125;&lt;/script&gt; 其中async: false是把ajax从异步改为同步，这样就可以实现在方法里实现对全局变量的修改。]]></content>
+    <content type="text"><![CDATA[一般在方法里对全局变量的修改仅限于方法体内，方法结束之后，全局变量就会恢复之前的值，在前端的js代码里，可以通过使用ajax来修改全局变量的值：1234567891011&lt;script type=&quot;text/javascript&quot;&gt; var n = 1; function changen() &#123; $.ajax(&#123; async: false, success: function() &#123; n = 0; &#125; &#125;) &#125;&lt;/script&gt; 其中async: false是把ajax从异步改为同步，这样就可以实现在方法里实现对全局变量的修改。]]></content>
       <categories>
         <category>前端</category>
       </categories>
@@ -34,11 +50,6 @@
       <tags>
         <tag>MySQL</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F04%2F19%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
   <entry>
     <title><![CDATA[test 测试文章]]></title>
