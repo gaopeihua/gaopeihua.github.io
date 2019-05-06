@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[前端js方法里面修改全局变量]]></title>
+    <url>%2F2019%2F05%2F06%2F%E5%89%8D%E7%AB%AFjs%E6%96%B9%E6%B3%95%E9%87%8C%E9%9D%A2%E4%BF%AE%E6%94%B9%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F%2F</url>
+    <content type="text"><![CDATA[一般在方法里对全局变量的修改仅限于方法体内，方法结束之后，全局变量就会恢复之前的值，在前端的js代码里，可以通过使用ajax来修改全局变量的值： 1234567891011&lt;script type=&quot;text/javascript&quot;&gt; var n = 1; function changen() &#123; $.ajax(&#123; async: false, success: function() &#123; n = 0; &#125; &#125;) &#125;&lt;/script&gt; 其中async: false是把ajax从异步改为同步，这样就可以实现在方法里实现对全局变量的修改。]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+        <tag>jq</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[tp分页日期参数后面有+]]></title>
     <url>%2F2019%2F04%2F26%2Ftp%E5%88%86%E9%A1%B5%E6%97%A5%E6%9C%9F%E5%8F%82%E6%95%B0%E5%90%8E%E9%9D%A2%E6%9C%89%2B%2F</url>
     <content type="text"><![CDATA[thinkphp分页中参数如果带有空格，空格会被编码成“+”，那么有些分页数据就没法正常读取。处理方法：找到分页文件类:123private function url($page)&#123; return str_replace(&apos;[PAGE]&apos;, $page, urldecode($this-&gt;url));&#125; think PHP5分页类文件路径：/thinkphp/library/think/Page.php]]></content>
